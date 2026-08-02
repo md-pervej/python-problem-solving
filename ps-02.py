@@ -1,5 +1,5 @@
-# 02-This program adds two numbers
 
+# ---------------Example 1: Example 1: Add Two Numbers---------------
 # This program adds two numbers
 
 num1 = 1.5
@@ -10,3 +10,20 @@ sum = num1 + num2
 
 # Display the sum
 print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+
+
+# ---------------Example 2: Add Two Numbers With User Input---------------
+# Store input numbers
+num1 = input('Enter first number: ')
+num2 = input('Enter second number: ')
+
+# Add two numbers
+sum = float(num1) + float(num2)
+
+# Display the sum
+print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+
+
+
+# ---------------Example 3: Add Two Numbers ---------------
+Alternative to this, we can perform this addition in a single statement without using any variables as follows.

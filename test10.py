@@ -1,8 +1,8 @@
 
-num1= 10.2
-num2=12.4
+num1=float(input("Enter first number:"))
+num2=float(input("Enter second number:"))
 
 total=num1 + num2
 
-# print("The sum of {:.1f} and {:.1f} is {:.1f}".format(num1,num2,total))
-print(f"The sumof {num1} and {num2} is : {total:.1f}")
+print("The sum of {:.1f} and {:.1f} is {:.1f}".format(num1,num2,total))
+print(f"The sum of {num1} and {num2} is :{total}")
