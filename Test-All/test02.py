@@ -1,11 +1,13 @@
 
-num=float(input("Enter a number:"))
+a=float(input("Enter first side:"))
+b=float(input("Enter second side:"))
+c=float(input("Enter third side:"))
 
+s=(a+b+c)/2
 
-num_sqrt=num**0.5
+area=(s*(s-a)*(s-b)*(s-c))**0.5
 
-print("The square root of %0.0f is %0.1f" %(num,num_sqrt))
+print("The area of the triangle is : %.2f" %area)
+print("The area of the triange is : {:.2f}" .format(area))
+print(f"The area of the triangle is:{area:.2f}")
 
-print("The square root of {:.0f} is {:.2f}".format(num,num_sqrt))
-
-print(f"The square root of {num:.0f} is {num_sqrt:.2f}")
