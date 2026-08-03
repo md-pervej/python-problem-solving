@@ -1,13 +1,15 @@
 
-a=float(input("Enter first side:"))
-b=float(input("Enter second side:"))
-c=float(input("Enter third side:"))
+x=int(input("Enter the value of x:"))
+y=int(input("Enter the value of y:"))
 
-s=(a+b+c)/2
 
-area=(s*(s-a)*(s-b)*(s-c))**0.5
+temp=x
+x=y
+y=temp
 
-print("The area of the triangle is : %.2f" %area)
-print("The area of the triange is : {:.2f}" .format(area))
-print(f"The area of the triangle is:{area:.2f}")
-
+# print("The value of x after swapping: {}".format(x))
+# print("The vlau of y after swapping:{}".format(y))
+print("The value of x after swapping %s" %x)
+print("The value of y after swappping:%s" %y)
+print(f"The value of x after swapping:{x}")
+print(f"The value of y after swapping:{y}")

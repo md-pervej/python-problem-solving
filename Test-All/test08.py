@@ -1,8 +1,14 @@
 
-num=float(input("Enter a number:"))
+x=int(input("Enter the value of x:"))
+y=int(input("Enter the value of y:"))
 
-num_sqrt=num ** 0.5
+temp =x
+x=y
+y=temp
 
-print("The square root of %.0f is %.2f" %(num, num_sqrt))
-print("The square root of {:.0f} is {:.2f}" .format(num,num_sqrt))
-print(f"The square root of {num:.0f} and {num_sqrt:.2f}")
+print("The value of x after swapping:%s" %x)
+print("The value of y after swapping:%s" %y)
+print("The value of x after swapping:{}".format(x))
+print("The value of y after swapping: {}".format(y))
+print(f"The value of x after swapping: {x}")
+print(f"The value of y after swapping: {x}")
