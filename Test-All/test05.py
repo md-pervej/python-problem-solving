@@ -1,7 +1,8 @@
-num1=float(input("Enter first number: "))
-num2 = float(input("Enter second number:"))
 
-total=num1 + num2
+num=float(input("Enter a number:"))
 
-# print("The sum of {:.1f} and {:.1f} is :{:.1f}".format(num1,num2,total))
-print(f"The sum of {num1} and {num2} is : {total:.2f}")
+num_sqrt=num ** 0.5
+
+print("The square root of %.0f is %.2f" %(num,num_sqrt))
+print("The square root of {:.0f} is {:.2f}".format(num,num_sqrt))
+print(f"The square root of {num:.0f} is {num_sqrt:.2f}")

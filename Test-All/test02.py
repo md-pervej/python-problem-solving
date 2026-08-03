@@ -1,9 +1,11 @@
 
-num1=2.5
-num2=3.5
+num=float(input("Enter a number:"))
 
-total= num1 + num2
 
-# print("The sumj of {0} and {1} is : {2}".format(num1,num2,total))
+num_sqrt=num**0.5
 
-print(f"The sum of {num1} and {num2} is {total}")
+print("The square root of %0.0f is %0.1f" %(num,num_sqrt))
+
+print("The square root of {:.0f} is {:.2f}".format(num,num_sqrt))
+
+print(f"The square root of {num:.0f} is {num_sqrt:.2f}")
