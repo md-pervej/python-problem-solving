@@ -1,14 +1,4 @@
+import random
+x=random.randint(1,7)
 
-x=int(input("Enter the value of x:"))
-y=int(input("Enter the value of y:"))
-
-temp=x
-x=y
-y=temp
-
-print("The value of x after swapping: %s" %x)
-print("The vlaue of y after swapping: %s" %y)
-print("The vlaue of x after swapping:{}".format(x))
-print("The value of y after swapping:{}".format(y))
-print(f"The value of x after swapping:{x}")
-print(f"The value of y after swapping:{y}")
+print(x)
