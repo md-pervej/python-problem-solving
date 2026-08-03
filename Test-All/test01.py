@@ -1,4 +1,7 @@
-import random
 
-x=random.randint(0,3)
-print(x)
+kilometers=float(input("Enter value in kilometers:"))
+
+one_km=0.621371
+
+miles= kilometers * one_km
+print("%.2f kilometers is equal to :%.2f miles" %(kilometers,miles))
