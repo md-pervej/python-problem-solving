@@ -1,8 +1,17 @@
 
-celsius=float(input("Enter a celsius value:"))
+num=float(input("Enter a number:"))
+# if num>0:
+#     print("Positive number")
+# elif num==0:
+#     print("Zero")
+# else:
+#     print("Negative number")
 
-fahrenheit=(celsius*1.8)+32
 
-print("%.1f degree celcius = %.1f fahrenheit"%(celsius,fahrenheit))
-print("{:.1f} degree celsius = {:.1f} fahrenheit".format(celsius,fahrenheit))
-print(f"{celsius:.1f} degree celsius = {fahrenheit:.1f} fahrenheit")
+if num>=0:
+    if num==0:
+        print("Zero")
+    else:
+        print("positive number")
+else:
+    print("Negative number")

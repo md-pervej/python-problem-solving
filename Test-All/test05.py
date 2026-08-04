@@ -1,9 +1,18 @@
 
-kilometers=float(input("Enter value in kilometers:"))
+num = float(input("Enter a number:"))
 
-one_km=0.621371
-miles=kilometers* one_km
+# if num>0:
+#     print("Positive number")
+# elif num ==0:
+#     print("Zero")
+# else:
+#     print("Negative number")
 
-print("%.2f kilometers = %.2f miles" %(kilometers,miles))
-print("{:.2f} kilometers = {:.2f} miles".format(kilometers,miles))
-print(f"{kilometers:.2f} kilometers = {miles:.2f} miles")
+
+if num>=0:
+    if num>0:
+        print("Positive number")
+    elif num==0:
+        print("Zero")
+else:
+    print("Negative number")
