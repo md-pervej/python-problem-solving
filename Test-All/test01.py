@@ -1,8 +1,10 @@
 
-celsius=float(input("Enate a celsius value:"))
+year=int(input("Enter a year:"))
 
-fahrenheit=(celsius *1.8)+32
+if (year%400==0) and (year % 100==0):
+    print("%s is leap year")
+elif (year %4==0) and (year%100 !=0):
+    print("%s year is leap year" %year)
+else:
+    print("%s is not leap year" %year)
 
-print("%.1f degree celsius = %.1f degree fahrenheit" %(celsius,fahrenheit))
-print("{:.1f} degree celsius = {:.1f} degree fahrenheit".format(celsius,fahrenheit))
-print(f"{celsius:.1f} degree celsius = {fahrenheit:.1f} degree fahrenheit")
