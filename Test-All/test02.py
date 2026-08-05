@@ -1,8 +1,8 @@
 
-kilometers=float(input("Enter value in kilometers:"))
-one_km=0.621371
+celsius=float(input("Enter a celsius value:"))
 
-miles=kilometers*one_km
-print("%.2f kilometers is =:%.2f miles"%(kilometers,miles))
-print("{:.2f} kilometes is ={:.2f} miles".format(kilometers,miles))
-print(f"{kilometers:.2f} kilometers is = {miles:.2f} miles")
+fahrenheit=(celsius*1.8)+32
+
+print("%.1f degree celsius = %.1f degree fahrenheit" %(celsius,fahrenheit))
+print("{:.1f} degree celsius = {:.1f} degree fahrenheit".format(celsius,fahrenheit))
+print(f"{celsius:.1f} degree celsius = {fahrenheit:.1f}")
