@@ -1,11 +1,16 @@
 
+year=int(input("Enter a year:"))
 
-num=int(input("Enter a number:"))
+# if (year%400 ==0) and (year%100==0):
+#     print("%s is leap year" %year)
+#
+# elif (year %4 ==0) and (year %100 !=0):
+#     print("%s is leap year"%year)
+# else:
+#     print("%s is not a leap year"%year)
 
-if(num%2)==0:
-    # print("%s is even number" %num)
-    print("{} is even number".format(num))
+
+if (year%400==0) or (year%4==0) and(year%100!=0):
+    print("{} is leap year".format(year))
 else:
-    # print("%s is odd number"%num)
-    print("{} is odd number".format(num))
-
+    print("%s is not a learp year" %year)
