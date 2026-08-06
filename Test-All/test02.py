@@ -1,15 +1,21 @@
 
-year=int(input("Enter a year:"))
 
+num1=float(input("Enter number-1:"))
+num2=float(input("Enter number-2:"))
+num3=float(input("Enter number-3:"))
 
-# if (year %400 ==0) and (year %100==0):
-#     print("{0} is leap year")
-# elif (year %4==0) and (year% 100 !=0):
-#     print("{0} is leap year".format(year))
-# else:
-#     print("{0} is not leap year".format(year))
-
-if(year %400 ==0) or (year %4==0 and year % 100!=0):
-    print(f"{year} is leap year")
+if num1==num2==num3:
+    print("All numbers are equal.")
+elif num1==num2 and num1>num3:
+    print("{:.0f} and {:.0f} are the largest number.".format(num1,num2))
+elif num1==num3 and num1>num2:
+    print("{:.0f} and {:.0f} are the largest number".format(num1,num3))
+elif num2==num3 and num2>num1:
+    print("{:.0f} and {:.0f} are hte largest numbber".format(num2,num3))
+elif num1>num2 and num1>num3:
+    print("{:.0f} is the largest number".format(num1))
+elif num2>num1 and num2>num3:
+    print("{:.of} is the largest number".format(num2))
 else:
-    print(f"{year} is not leap year")
+    print("{:.0f} is the largest number".format(num3))
+
