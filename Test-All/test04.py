@@ -1,17 +1,18 @@
 
 
-num=int(input("Enter a number:"))
-
+lower=int(input("Enter a lower number:"))
+upper=int(input("Enter a upper number:"))
+prime_list=[]
 flag=False
-
-if num==0 or num==1:
-    print(num,"is not a prime number")
-elif num>1:
-    for i in range(2,num):
-        if(num%i==0):
+for num in range(lower, upper+1):
+    if num>1:
+        for i in range(2,num):
+            if num%i==0:
+                break
+        else:
+            prime_list.append(num)
             flag=True
-            break
-    if flag:
-        print(num,"is not a prime number")
-    else:
-        print(num,"is a prime number")
+if flag:
+    print("prime number between",lower,"and",upper, "are:",prime_list)
+else:
+    print("There are no prime number between",lower, "and",upper)
