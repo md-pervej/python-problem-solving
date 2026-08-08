@@ -1,21 +1,16 @@
 
+num=int(input("Enter a numbe:"))
 
-num1=float(input("Enter number-1:"))
-num2=float(input("Enter number-2:"))
-num3=float(input("Enter number-3:"))
+flag=False
 
-if num1==num2==num3:
-    print("All numbers are equal.")
-elif num1==num2 and num1>num3:
-    print("{:.0f} and {:.0f} are the largest number.".format(num1,num2))
-elif num1==num3 and num1>num2:
-    print("{:.0f} and {:.0f} are the largest number".format(num1,num3))
-elif num2==num3 and num2>num1:
-    print("{:.0f} and {:.0f} are hte largest numbber".format(num2,num3))
-elif num1>num2 and num1>num3:
-    print("{:.0f} is the largest number".format(num1))
-elif num2>num1 and num2>num3:
-    print("{:.of} is the largest number".format(num2))
-else:
-    print("{:.0f} is the largest number".format(num3))
-
+if num==0 or num==1:
+    print(num, "is not prime number.")
+elif num>1:
+    for i in range(2,num):
+        if(num%i==0):
+            flag=True
+            break
+    if flag:
+        print(num,"is not a prime number")
+    else:
+        print(num,"is a prime number")
