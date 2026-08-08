@@ -1,20 +1,18 @@
 
-num1=float(input("Enter number-1:"))
-num2=float(input("Enter number-2:"))
-num3=float(input("Enter number-3:"))
 
-if num1==num2==num3:
-     print("All numbers are equal.")
-elif num1==num2 and num1>num3:
-    print("%.0f and %.0f are the greatest number." %(num1,num2))
-elif num1==num3 and num1>num2:
-    print("%.0f and %.0f are the greatest  number." %(num1,num3))
-elif num2==num3 and num2>num1:
-    print("%.0f and %.0f are the greatest number" %(num2,num3))
-elif num1>num2 and num1>num3:
-    print("%.0f is the greatest number"%num1)
-elif num2>num1 and num2>num3:
-    print("%.0f is the greatest number"%num2)
+lower=int(input("Enter a lower number:"))
+upper=int(input("Enter a upper number:"))
+prime_list=[]
+flag=False
+for num in range(lower, upper+1):
+    if num>1:
+        for i in range(2,num):
+            if num%i==0:
+                break
+        else:
+            prime_list.append(num)
+            flag=True
+if flag:
+    print("prime number between",lower,"and",upper, "are:",prime_list)
 else:
-    print("%.0f is the greatest number." %num3)
-
+    print("There are no prime number between",lower, "and",upper)

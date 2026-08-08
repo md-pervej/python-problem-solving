@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 num=int(input("Enter a number:"))
 
 flag=False
@@ -13,3 +14,18 @@ elif num>1:
         print(num,"is not a prime number")
     else:
         print(num,"is a prime number")
+=======
+
+lower=int(input("Enter lower number:"))
+upper=int(input("Enter upper number:"))
+
+print("prime numbers between",lower,"and",upper, "are:")
+
+for num in range(lower,upper+1):
+    if num>1:
+        for i in range(2,num):
+            if(num%i==0):
+                break
+            else:
+                print(num)
+>>>>>>> 01c82e7ecdff19f17785e15132af6fbd34537673
