@@ -1,20 +1,20 @@
 
+num=int(input("Enter a number:"))
 
-lower=int(input("Enter a lower number:"))
-upper=int(input("Enter a upper number:"))
-prime_list=[]
-flag=False
+# if num<0:
+#     print("sorry,Factorial does not exists for negativ enumber")
+# elif num==0:
+#     print("Factorial of 0 is 1")
+# else:
+#     factorial=1
+#     for i in range(1,num+1):
+#         factorial=factorial*i
+# print("Factorial of",num,factorial)
 
-for num in range(lower,upper+1):
-    print(num)
-    if num >1:
-        for i in range(2,num):
-            if num%i==0:
-                break
-        else:
-            prime_list.append(num)
-            flag=True
-if flag:
-    print("Prime numbers between",lower, "and",upper,"are:",prime_list)
-else:
-    print("There are no prime numbers between",upper,"and",lower)
+def factorial(x):
+    if x==0 or x==1:
+        return 1
+    else:
+        return (x*factorial(x-1))
+result=factorial(num)
+print("Factorial 0f",num,"is:",result)

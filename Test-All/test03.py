@@ -1,16 +1,22 @@
 
 
-lower=int(input("Enter lower number:"))
-upper=int(input("Enter uppser number:"))
-prime_list=[]
+num=int(input("Enter a number:"))
 
+# if num<0:
+# #     print("Sorry,Factorial does not exists for negative numbers")
+# # elif num==0:
+# #     print("Factorial of 0 is 1")
+# # else:
+# #     factorial=1
+# #     for i in range(1,num+1):
+# #         factorial=factorial*i
+# # print("Factorial of ",num,"is:",factorial)
 
-for num in range(lower,upper+1):
-    if num >1:
-        for i in range(2,num):
-            if num%i==0:
-                break
-        else:
-            prime_list.append(num)
-print("prime numbers between", lower ,"and" ,upper, "are:",prime_list)
+def factorial(x):
+    if x==0 or x==1:
+        return 1
+    else:
+        return (x*(factorial(x-1)))
 
+result=factorial(num)
+print("Factorial of ",num,"is:",result)

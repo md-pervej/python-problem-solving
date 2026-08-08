@@ -1,31 +1,28 @@
 
-num=int(input("Enter a numbe:"))
 
-<<<<<<< HEAD
-flag=False
+num=int(input("Enter a number:"))
+#
+# if num<0:
+#     print("Sorry, Factorial does not exists for negetive numbers")
+# elif num==0:
+#     print("Factorial of  0 is 1")
+# else:
+#     factorial=1
+#     for i in range(1,num+1):
+#         factorial=factorial*i
+# print("Factorial of ",num,"is:",factorial)
 
-if num==0 or num==1:
-    print(num, "is not prime number.")
-elif num>1:
-    for i in range(2,num):
-        if(num%i==0):
-            flag=True
-            break
-    if flag:
-        print(num,"is not a prime number")
+def factorial(x):
+    if x==0 or x==1:
+        return 1
     else:
-        print(num,"is a prime number")
-=======
-lower=int(input("Enter a lower number:"))
-upper=int(input("enter upper number:"))
+        return (x*(factorial(x-1)))
 
-print("prime numbers between ",lower,"and",upper,"are:")
+    3*factorial(2)
+    2*(factorial(1))
+    1*(factorial(1))
 
-for num in range(lower,upper+1):
-    if num>1:
-        for i in range(2,num):
-            if num%i==0:
-                break
-        else:
-            print(num)
->>>>>>> 01c82e7ecdff19f17785e15132af6fbd34537673
+result=factorial(num)
+print("Factorial ",num,"is:",result)
+
+
