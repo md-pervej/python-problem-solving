@@ -1,19 +1,13 @@
 
-num=int(input("Fibonacci series upto:"))
+num=int(input("Enter a number to check armstrong:"))
+sum=0
+temp=num
 
-n1,n2=0,1
-count=0
-
-if num<=0:
-    print("Pls, enter a positive integer.")
-elif num==1:
-    print("Fibonacci series upto:",num)
-    print(n1)
+while temp>0:
+    digit=temp %10
+    sum+=digit**3
+    temp//=10
+if num==sum:
+    print(num,"is a armstrong number")
 else:
-    print("Fibonacci series:")
-    while count<num:
-        print(n1)
-        nth=n1 +n2
-        n1=n2
-        n2=nth
-        count +=1
+    print(num,"is not a armstrong number")
