@@ -1,12 +1,11 @@
 
-
+# -----18:Python Program to Print the Fibonacci sequence-----
 num=int(input("Fibonacci series upto:"))
 
 n1,n2=0,1
 count=0
-
 if num<=0:
-    print("Pls, enter a positive integer.")
+    print("Pls, Enter a positive integer.")
 elif num==1:
     print("Fibonacci series upto:",num)
     print(n1)
@@ -14,7 +13,7 @@ else:
     print("Fibonacci series:")
     while count<num:
         print(n1)
-        nth=n1+n2
+        nth=n1 + n2
         n1=n2
         n2=nth
         count+=1

@@ -1,5 +1,19 @@
 
+num=int(input("Fibonacci series till:"))
+n1,n2=0,1
+count=0
 
-num=int(input("Display the multiplication table of:"))
+if num<=0:
+    print("Pls Enter a positive intiger")
+elif num==1:
+    print("Fibonacci series upto",num,":")
+    print(n1)
+else:
+    print("Fibonacci series:")
+    while count<num:
+        print(n1)
+        nth=n1+n2
+        n1=n2
+        n2=nth
+        count +=1
 
-print(num,"x",i,"="num*i)
