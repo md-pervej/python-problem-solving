@@ -1,8 +1,5 @@
 
+my_list=[2,6,10,15,20,36]
 
-num=int(input("How many terms:"))
-
-
-result=list(map(lambda x:2**x,range(num+1)))
-for i in range(num+1):
-    print("2 raised power of",i,"is:",result[i])
+result=list(filter(lambda x: (x % 2==0),my_list))
+print("Numbers divisible by 2 are:",result)

@@ -1,7 +1,6 @@
 
 
-num=int(input("How many terms:"))
+my_list = [12, 65, 54, 39, 102, 339, 221,]
+result= list(filter(lambda x: (x%13==0),my_list))
 
-result=list(map(lambda x:2**x,range(num)))
-for i in range(num):
-    print("2 raised to power",i,"is:",result[i])
+print("Numbers divisible by 13 are:",result)
