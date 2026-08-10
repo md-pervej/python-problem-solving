@@ -1,21 +1,15 @@
 
-
-lower=int(input("Enter a lower numer:"))
-
+lower=int(input("Enter a lower number:"))
 upper=int(input("Enter a upper number:"))
-prime_list=[]
-flag=False
-
+armstrong_list=[]
 for num in range(lower,upper+1):
-    if num>1:
-        for i in range(2,num):
-            if num%2==0:
-                break
-
-        else:
-            prime_list.append(num)
-            flag = True
-if flag:
-    print("Prime numbers between", lower, "and", upper, "are:",",".join(map(str,prime_list)))
-else:
-    print("There are no prime numbers between",lower, "and",upper)
+    order=len(str(num))
+    total=0
+    temp=num
+    while temp>0:
+        digit=temp % 10
+        total+=digit**order
+        temp//=10
+    if num==total:
+        armstrong_list.append(num)
+print("From",lower,"to",upper,"armstrong number is:"," ".join(map(str,armstrong_list)))

@@ -1,22 +1,8 @@
 
 
-num=int(input("Enter a number:"))
+num=int(input("How many terms:"))
 
-# if num<0:
-#     print("Sorry, Factorial does not exists for negative number")
-# elif num==0:
-#     print("Factorial of 0 is 1")
-# else:
-#     factorial=1
-#     for i in range(1,num+1):
-#         factorial=factorial*i
-#     print("Factorial of ",num, "is:",factorial)
 
-def factorial(x):
-    if x==0 or x==1:
-        return 1
-    else:
-        return (x*(factorial(x-1)))
-result=factorial(num)
-
-print("Factorial of ",num,"is:",result)
+result=list(map(lambda x:2**x,range(num+1)))
+for i in range(num+1):
+    print("2 raised power of",i,"is:",result[i])

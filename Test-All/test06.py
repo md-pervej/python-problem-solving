@@ -1,20 +1,11 @@
 
+num=int(input("Enter a number:"))
 
-lower=int(input("Enter a lower number:"))
-upper=int(input("Enter a upper number:"))
-
-prime_list=[]
-flag=False
-for num in range(lower,upper+1):
-    if num>1:
-        for i in range(2,num):
-            if num%i==0:
-                break
-
-        else:
-            prime_list.append(num)
-            flag = True
-if flag:
-    print("Prime numbers between" ,lower,"and",upper,"are:",",".join(map(str,prime_list)))
+if num<0:
+    print("Enter a positive number.")
 else:
-    print("There are no prime numbers between",lower,"and",upper)
+    total=0
+    while num>0:
+        total+=num
+        num-=1
+    print("Total is:",total)

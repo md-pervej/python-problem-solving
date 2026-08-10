@@ -1,15 +1,15 @@
 
-
+# ------:20 Python Program to Check Prime Number-----
 lower=int(input("Enter a lower number:"))
-upper=int(input("Enter a upper number:"))
-armstrong_list=[]
+upper=int(input("Enter upper number:"))
 
-for num in range(lower,upper+1):
+armstrong_list=[]
+for num in range(lower, upper+1):
     order=len(str(num))
     total=0
     temp=num
     while temp>0:
-        digit=temp % 10
+        digit=temp %10
         total+=digit**order
         temp//=10
     if num==total:
