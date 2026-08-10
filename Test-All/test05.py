@@ -1,14 +1,11 @@
 
+num=int(input("Enter a number:"))
 
-num=int(input("Enter a number to check armstrong number:"))
-sum=0
-temp=num
-
-while temp>0:
-    digit=temp %10
-    sum+=digit**3
-    temp//=10
-if num==sum:
-    print(num,"is a armstrong number")
+if num<0:
+    print("Enter a positive number:")
 else:
-    print(num,"is not a armstrong number")
+    total=0
+    while num>0:
+        total+=num
+        num-=1
+    print("Total is:",total)

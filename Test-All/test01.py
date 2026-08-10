@@ -1,15 +1,12 @@
 
+num=int(input("Enter a numbet to sum:"))
 
-lower=int(input("Enter a lowe number:"))
-upper=int(input("Enter a upper number:"))
-
-for num in range(lower,upper+1):
-    order=len(str(num))
+if num<0:
+    print("Pls. Enter a positive number.")
+else:
     sum=0
-    temp=num
-    while temp>0:
-        digit=temp %10
-        sum+=digit**order
-        temp//=10
-    if num==sum:
-        print(sum)
+    while num>0:
+        sum+=num
+        num -=1
+    print("The sum is",sum)
+

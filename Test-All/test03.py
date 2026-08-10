@@ -1,19 +1,11 @@
 
+num=int(input("Enter a number to calculate sum:"))
 
-
-lower=int(input("Enter a lower number:"))
-upper=int(input("Enter a upper number:"))
-
-armstrong_list=[]
-for num in range(lower,upper+1):
-    order=len(str(num))
+if num<0:
+    print("Enter a positive number.")
+else:
     total=0
-    temp=num
-
-    while temp>0:
-        digit=temp %10
-        total+=digit**order
-        temp//=10
-    if num==total:
-        armstrong_list.append(num)
-print("From",lower,"to",upper,"armstrong number is:"," ".join(map(str,armstrong_list)))
+    while num>0:
+        total+=num
+        num-=1
+    print("Total is:",total)
