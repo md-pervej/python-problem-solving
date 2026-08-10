@@ -1,14 +1,13 @@
 
 
-lower=int(input("Enter lower number:"))
-upper=int(input("Enter upper number:"))
+num=int(input("Enter a number:"))
 
-print("prime numbers between",lower,"and",upper, "are:")
-
-for num in range(lower,upper+1):
-    if num>1:
-        for i in range(2,num):
-            if(num%i==0):
-                break
-            else:
-                print(num)
+if num<0:
+    print("Sorry factorial does not exists for negative numbers")
+elif num==0:
+    print("The factorial of 0 ia 1")
+else:
+    factorial=1
+    for i in range(1,num+1):
+        factorial =factorial*i
+    print("The factorila of ",num, "is",factorial)

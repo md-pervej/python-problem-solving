@@ -1,18 +1,8 @@
 
 
-lower=int(input("Enter a lower number:"))
-upper=int(input("Enter a upper number:"))
-prime_list=[]
-flag=False
-for num in range(lower, upper+1):
-    if num>1:
-        for i in range(2,num):
-            if num%i==0:
-                break
-        else:
-            prime_list.append(num)
-            flag=True
-if flag:
-    print("prime number between",lower,"and",upper, "are:",prime_list)
-else:
-    print("There are no prime number between",lower, "and",upper)
+num=int(input("Enter a number:"))
+
+if num<0:
+    print("Sorry, Factorial for negative number is not exists")
+elif num==0:
+    
