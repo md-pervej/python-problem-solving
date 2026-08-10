@@ -1,18 +1,20 @@
 
 
-num=int(input("Enter a number to check armstrong:"))
+lower=int(input("Enter a lower number:"))
 
-sum=0
-temp=num
+upper=int(input("Enter a upper number:"))
+armstrong_list = []
+for num in range(lower,upper+1):
 
-while temp>0:
-    digit=temp%10
-    sum+=digit**3
-    temp//=10
+    order=len(str(num))
+    total =0
+    temp=num
 
-if num==sum:
-    print(num,"is a armstrong number")
-else:
-    print(num,"is not a armstrong number")
-
-
+    while temp>0:
+        digit=temp % 10
+        total+=digit**order
+        temp//=10
+    if num==total:
+        armstrong_list.append(num)
+print("From",lower,"to",upper,"armstrong list is:"," " .join(map(str,armstrong_list)))
+# print("From", lower, "to", upper, "armstrong list is:", " ".join(map(str, armstrong_list)))
