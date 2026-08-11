@@ -1,10 +1,7 @@
 
-num=int(input("Enter a number to calculate sum:"))
-if num<0:
-    print("Enter a positive number.")
-else:
-    sum=0
-    while num>0:
-        sum+=num
-        num -=1
-    print("Total is:",sum)
+
+num=int(input("How many terms:"))
+
+result = list(map(lambda x:2**x,range(num)))
+for i in range(num):
+    print("2 raised to power is:",i,"is",result[i])
