@@ -1,21 +1,10 @@
 
-num1=int(input("Enter number-1:"))
-num2=int(input("Enter number-2:"))
+num=int(input("Enter a number:"))
 
-def compute_lcm(x,y):
-    if x>y:
-        greater=x
-    else:
-        greater=y
-    while True:
-        if ((greater % x==0) and (greater%y==0)):
-            lcm=greater
-            break
-        greater +=1
-    return lcm
-
-result=compute_lcm(num1,num2)
-print("The L.C.M of ",num1,"and",num2,"is:",result)
-
-
-
+factors_list=[]
+def find_factors(x):
+    for i in range(1,x+1):
+        if x%i==0:
+            factors_list.append(i)
+find_factors(num)
+print("Factors of",num,"are:"," ".join(map(str,factors_list)))
