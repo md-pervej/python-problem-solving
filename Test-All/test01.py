@@ -1,7 +1,5 @@
 
-num=int(input("Enter a number:"))
 
-print("The decimal value of ",num,"is:")
-print(bin(num),"in binary")
-print(oct(num),"in octal")
-print(hex(num),"in hex")
+letter=input("Enter a letter:")
+
+print("The ASCII value of"+letter+"is:",ord(letter))

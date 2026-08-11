@@ -1,9 +1,3 @@
+letter=input("Enter a letter to check ASCII value:")
 
-
-num=int(input("Enter a number:"))
-
-print("The decimal value of ",num,"is:")
-print(bin(num),"in binary")
-print(oct(num),"in Octal")
-print(hex(num),"in hexadecimal")
-
+print("The ASCII value of",letter,"is:",ord(letter))
