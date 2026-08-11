@@ -1,11 +1,8 @@
 
+
 num=int(input("Enter a number:"))
 
-if num<0:
-    print("Enter a positive number:")
-else:
-    total=0
-    while num>0:
-        total+=num
-        num-=1
-    print("Total is:",total)
+print("The decimal value of ",num,"is:")
+print(bin(num),"in binary")
+print(oct(num),"in octal")
+print(hex(num),"in hexadecimal")
