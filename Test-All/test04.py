@@ -1,12 +1,5 @@
 
+my_list=[3,8,6,13,15,18,21]
 
-num=int(input("Enter a number:"))
-
-if num<0:
-    print("Enter a positive number:")
-else:
-    total=0
-    while num>0:
-        total+=num
-        num-=1
-    print("Total is:",total)
+result = list(filter(lambda x:(x % 3==0),my_list))
+print("Numbers divisible by 5 are:",result)
