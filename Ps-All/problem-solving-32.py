@@ -1,12 +1,13 @@
 
-
+# -------32:problem-solving-----
 def recur_fibo(n):
     if n<=1:
         return n
     else:
-        return(recur_fibo(n-1)+recur_fibo(n-2))
+        return (recur_fibo(n-1) + recur_fibo(n-2))
 
 num=int(input("Enter a number:"))
+
 if num<=0:
     print("Enter a positive number.")
 else:

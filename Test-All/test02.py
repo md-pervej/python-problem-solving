@@ -1,7 +1,16 @@
 
-import calendar
+def recur_fibo(n):
+    if n<=1:
+        return n
+    else:
+        return (recur_fibo(n-1)+recur_fibo(n-2))
 
-year=int(input("Enter year:"))
-month=int(input("Enter month:"))
+num=int(input("Enter number:"))
 
-print(calendar.month(year,month))
+if num<=0:
+    print("Enter positive number.")
+else:
+    print("Fibonacci sequence:")
+    for i in range(num):
+        print(recur_fibo(i))
+
