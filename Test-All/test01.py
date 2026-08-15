@@ -1,14 +1,16 @@
 
 
-num=int(input("Enter a numbe:"))
-
-def recur_sum(n):
-    if n<=1:
+def recur_factorial(n):
+    if n==1:
         return n
     else:
-        return n + recur_sum(n-1)
+        return n* recur_factorial(n-1)
 
-if num<1:
-    print("Enter a positive number.")
+
+num=int(input("Enter a number:"))
+if num<0:
+    print("Factorial does not exists for negative number.")
+elif num==0:
+    print("Factorail of 0 is 1")
 else:
-    print("The sum is ",recur_sum(num))
+    print("The factorail of ",recur_factorial(num))
