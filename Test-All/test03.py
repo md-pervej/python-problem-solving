@@ -1,17 +1,7 @@
 
-
-
+def convertToDecimal(n):
+    if n>1:
+        convertToDecimal(n//2)
+    print(n%2,end='')
 num=int(input("Enter a number:"))
-
-def recur_factorial(n):
-    if n<=1:
-        return n
-    else:
-        return n * recur_factorial(n-1)
-
-if num<0:
-    print("Factorial does not exists negative integer.")
-elif num==0:
-    print("Factorial of 0 is 1")
-else:
-    print("Factoril of ",num,"is:",recur_factorial(num))
+convertToDecimal(num)
