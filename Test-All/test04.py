@@ -1,17 +1,13 @@
 
-def recur_fibo(n):
+def recur_num(n):
     if n<=1:
-        return
+        return n
     else:
-        return (recur_fibo(n - 1) + recur_fibo(n - 2))
-
-
+        return n + recur_num(n-1)
 
 num=int(input("Enter a number:"))
 
-if num<=0:
+if num<1:
     print("Enter a positive number:")
 else:
-    print("Fibonacci sequence:")
-    for i in range(num):
-        print(recur_fibo(i))
+    print("The sum is: ",recur_num(num))
