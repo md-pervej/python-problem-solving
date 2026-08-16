@@ -1,10 +1,17 @@
+# Program to perform different set operations like in mathematics
 
+# define three sets
+E = {0, 2, 4, 6, 8};
+N = {1, 2, 3, 4, 5};
 
-user_input=input("Enter a word: ")
+# set union
+print("Union of E and N is",E | N)
 
-words=[word.lower() for word in user_input.split()]
+# set intersection
+print("Intersection of E and N is",E & N)
 
-words.sort()
-print("The sorted words are:")
-for word in words:
-    print(word)
+# set difference
+print("Difference of E and N is",E - N)
+
+# set symmetric difference
+print("Symmetric difference of E and N is",E ^ N)
