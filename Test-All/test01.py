@@ -1,10 +1,10 @@
 
-# define punctuation
-punctuations = '''!()-[]{};:'"\\,<>./?@#$%^&*_~'''
-user_str=input("Enter a string to remove punctuation:")
-no_punct=""
 
-for char in user_str:
-    if char not in punctuations:
-        no_punct=no_punct+char
-print(no_punct)
+user_input=input("Enter a word: ")
+
+words=[word.lower() for word in user_input.split()]
+
+words.sort()
+print("The sorted words are:")
+for word in words:
+    print(word)
