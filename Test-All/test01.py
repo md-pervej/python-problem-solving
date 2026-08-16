@@ -1,11 +1,10 @@
 
+# define punctuation
+punctuations = '''!()-[]{};:'"\\,<>./?@#$%^&*_~'''
+user_str=input("Enter a string to remove punctuation:")
+no_punct=""
 
-user_str=input("Enter a word to check palindrom:")
-
-case_str=user_str.casefold()
-rev_str=reversed(case_str)
-
-if list(user_str)==list(rev_str):
-    print(user_str+" is palindrome")
-else:
-    print(user_str+" is not palimdrome")
+for char in user_str:
+    if char not in punctuations:
+        no_punct=no_punct+char
+print(no_punct)
