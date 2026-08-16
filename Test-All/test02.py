@@ -1,10 +1,5 @@
 
+x=[[12,7,3],
+   [4,5,6],
+   [7,8,9]]
 
-
-def convertToDecimal(n):
-    if n>1:
-        convertToDecimal(n//2)
-    print (n%2,end='')
-
-num=int(input("Enter a number:"))
-convertToDecimal(num)
