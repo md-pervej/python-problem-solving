@@ -1,19 +1,9 @@
-<<<<<<< HEAD
-=======
 
-x=[[12,7,3],
-   [4,5,6],
-   [7,8,9]]
 
-<<<<<<< HEAD
-=======
-
-def convertToDecimal(n):
-    if n>1:
-        convertToDecimal(n//2)
-    print (n%2,end='')
-
-num=int(input("Enter a number:"))
-convertToDecimal(num)
->>>>>>> 901d4fba66d1079b6bf7696521607988ca342e80
->>>>>>> 9b6d6fe76ca31194474b326654752e274d5c22fb
+user_input=input("Enter a word to check palindrome:")
+case_user_input=user_input.casefold()
+rev_str=reversed(case_user_input)
+if list(case_user_input)==list(rev_str):
+    print(case_user_input+" is a plindrome")
+else:
+    print(case_user_input+" is not palindrome")
