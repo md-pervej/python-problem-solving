@@ -1,22 +1,12 @@
 
-X=[
-    [12,7,3],
-    [4,5,6],
-    [7,8,9],
-]
 
-Y=[
-    [5,8,1],
-    [6,7,3],
-    [4,5,9],
-]
+user_input=input("Enter a word to check vowsl:")
 
-result=[
-    [0,0,0]
-    [0,0,0]
-    [0,0,0]
-]
+lowercase_text=user_input.casefold()
+vowels='aioue'
+vowels_count={}.fromkeys(vowels,0)
 
-for i in range(len(X)):
-    for j in range(len(X[0])):
-        result[i][j]=X[i][j] +Y[i][j]
+for char in lowercase_text:
+    if char in vowels_count:
+        vowels_count[char]+=1
+print(vowels_count)
