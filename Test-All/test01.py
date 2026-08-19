@@ -1,12 +1,7 @@
 
-vowels='aeiou'
+dic1={1:'Red',2:'Green'}
+dic2={1:'Black',3:'White'}
 
-user_input=input("Enter a sentence to check vowel:")
-
-lowercase_text=user_input.casefold()
-vowels_count={}.fromkeys(vowels,0)
-
-for char in lowercase_text:
-    if char in vowels_count:
-        vowels_count[char]+=1
-print(vowels_count)
+new_dic=dic2.copy()
+new_dic.update(dic1)
+print(new_dic)

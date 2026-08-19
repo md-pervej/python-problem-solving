@@ -1,12 +1,8 @@
 
+month1={1:'January',2:'March'}
+month2={2:'June',4:'August'}
 
-user_input=input("Enter a word to check vowels:")
-lowercase_test=user_input.casefold()
-vowels='aeiou'
-vowels_count={}.fromkeys(vowels,0)
 
-for char in lowercase_test:
-    if char in vowels_count:
-        vowels_count[char]+=1
-print(vowels_count)
-
+new_month=month2.copy()
+new_month.update(month1)
+print(new_month)

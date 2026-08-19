@@ -1,12 +1,6 @@
 
+dict1={1:'Ornage',2:'Red'}
+color2={2:'Yellow',3:'Blue'}
 
-user_input=input("Enter a word to check vowels:")
-lowercase_text=user_input.casefold()
-vowels='aeuio'
-vowels_count={}.fromkeys(vowels,0)
-
-
-for char in lowercase_text:
-    if char in vowels_count:
-        vowels_count[char]+=1
-print(vowels_count)
+# print(dict1 | color2)
+print({**dict1,**color2})

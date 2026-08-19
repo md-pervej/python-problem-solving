@@ -1,12 +1,9 @@
 
 
-user_input=input("Enter a word to check vowsl:")
+day1={1:'Saturday',2:'Sunday'}
+day2={1:'Tuesday',5:'Wednesday'}
 
-lowercase_text=user_input.casefold()
-vowels='aioue'
-vowels_count={}.fromkeys(vowels,0)
 
-for char in lowercase_text:
-    if char in vowels_count:
-        vowels_count[char]+=1
-print(vowels_count)
+new_day=day2.copy()
+new_day.update(day1)
+print(new_day)
