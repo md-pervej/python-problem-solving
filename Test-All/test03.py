@@ -1,4 +1,5 @@
 
-from pathlib import Path
-
-Path("dirB/img").mkdir(parents=True,exist_ok=True)
+colors=['Red','Green','Blue','Yello','White']
+for index in range(len(colors)):
+    value=colors[index]
+    print(index,value)

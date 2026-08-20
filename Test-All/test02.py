@@ -1,4 +1,5 @@
 
+countries=['UK','USA','India','Srilanka','Canada']
 
-from pathlib import Path
-Path("dirC/dirD").mkdir(parents=True,exist_ok=True)
+for country,country_capital in enumerate(countries,start=1):
+    print(country,country_capital)
