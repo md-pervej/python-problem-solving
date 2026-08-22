@@ -1,5 +1,8 @@
 
-my_list=[[1],[2,3],[4,5,6],[7,8,9,10]]
 
-flat_list=[num for subList in my_list for num in subList]
-print(flat_list)
+my_list=[1,2,3,4,5,6,7,8,9,10]
+
+# print(my_list[:])
+# print(my_list[5:])
+# print(my_list[:9])
+print(my_list[::3])

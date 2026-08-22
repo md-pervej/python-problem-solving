@@ -1,23 +1,9 @@
 
-import functools from reduce
-# import itertools
-#
-my_list=[[1,2],[3,4,5],[6,7,8],[9,10]]
-# flat_list=list(itertools.chain(*my_list))
-# print(flat_list)
 
+my_list=[1,2,3,4,5,6,7,8,9,10]
 
-
-# flat_list=[]
-# for sublist in my_list:
-#     for num in sublist:
-#         flat_list.append(num)
-# print(flat_list)
-#
-# flat_list = [num for sublist in my_list for num in sublist]
-# print(flat_list)
-
-print(repr(lambda(x,y)))
-
-
-
+# print(my_list[:])
+# print(my_list[3:])
+# print(my_list[:4])
+# print(my_list[3:8])
+print(my_list[::3])
