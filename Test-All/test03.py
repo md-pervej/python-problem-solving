@@ -1,8 +1,6 @@
 
+dic={5:4,2:8,3:4,1:2}
 
-name_list={'a':'anis','b':'Rahim','c':'Sifat'}
+sorted_dic={key:value for key,value in sorted(dic.items(),key=lambda item:item[1])}
 
-
-
-for key in name_list:
-    print(key)
+print(sorted_dic)

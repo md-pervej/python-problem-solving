@@ -1,9 +1,6 @@
 
 
-course_list={'a':'HTML','b':'CSS','c':'Java'}
-#
-# for key, value in course_list.items():
-#     print(key,value)
+dt={5:4,1:6,6:3}
 
-for key in course_list:
-    print(key,course_list[key])
+sorted_dic= {key:value for key,value in sorted(dt.items(),key=lambda item:item[1])}
+print(sorted_dic)
