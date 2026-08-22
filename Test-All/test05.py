@@ -1,11 +1,5 @@
 
-colors=['Red','Green','Blue','Yellow','Bisque']
-# for index,value in enumerate(colors):
-    # print(index,value)
+my_list=[[1],[2,3],[4,5,6],[7,8,9,10]]
 
-# for index,value in enumerate(colors,start=1):
-    # print(index,value)
-
-for index in range(len(colors)):
-    value=colors[index]
-    print(index,value)
+flat_list=[num for subList in my_list for num in subList]
+print(flat_list)

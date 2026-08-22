@@ -1,6 +1,15 @@
 
+from functools import  reduce
+my_list=[[1,2],[3,4],[5,6],[7,8,]]
 
-course=['HTML','CSS','JS','Java','Python']
+# flat_list=[]
+# for subList in my_list:
+#     for num in subList:
+#         flat_list.append(num)
+# print(flat_list)
 
-for course, course_id in enumerate(course,start=1):
-    print(course,course_id)
+# flat_ist=sum(my_list,[])
+# print(flat_ist)
+
+print(reduce(lambda x,y:x+y,my_list))
+

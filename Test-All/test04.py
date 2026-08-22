@@ -1,12 +1,20 @@
 
-months=["March",'April','May','June','July']
 #
-# for index,month in enumerate(months):
-#     print(index,month)
+# import itertools
 #
-# for index,month in enumerate(months,start=1):
-#     print(index,month)
+my_list=[[1,2],[3,4,5],[6,7,8,9,10]]
+#
+# flat_list=list(itertools.chain(*my_list))
+# print(flat_list)
 
-for index in range(len(months)):
-    value=months[index]
-    print(index,value)
+# flat_list=[]
+#
+# for sublist in my_list:
+#     for num in sublist:
+#         flat_list.append(num)
+# print(flat_list)
+
+flat_list=[num for sublist in my_list for num in sublist]
+print(flat_list)
+
+

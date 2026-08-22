@@ -1,5 +1,12 @@
 
-countries=['UK','USA','India','Srilanka','Canada']
+from functools import reduce
 
-for country,country_capital in enumerate(countries,start=1):
-    print(country,country_capital)
+my_list=[[1,2],[3,4,5],[6,7,8]]
+
+# flat_list=[]
+# for sublist in my_list:
+#     for num in sublist:
+#         flat_list.append(num)
+# print(flat_list)
+
+print(reduce(lambda x,y:x+y,my_list))
