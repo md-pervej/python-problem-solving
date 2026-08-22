@@ -1,8 +1,8 @@
 
-my_list=[1,2,3,4,5,6,7,8,9,10]
+course_list={'a':'HTML','b':'CSS','c':'Java'}
 
-# print(my_list[:])
-# print(my_list[2:])
-# print(my_list[:5])
-# print(my_list[2:8])
-print(my_list[::4])
+# for key,value in course_list.items():
+#     print(key,value)
+
+for key in course_list:
+    print(key,course_list[key])

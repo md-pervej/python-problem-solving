@@ -1,9 +1,8 @@
 
 
-my_list=[1,2,3,4,5,6,7,8,9,10]
+name_list={'a':'anis','b':'Rahim','c':'Sifat'}
 
-# print(my_list[:])
-# print(my_list[3:])
-# print(my_list[:4])
-# print(my_list[3:8])
-print(my_list[::3])
+
+
+for key in name_list:
+    print(key)
