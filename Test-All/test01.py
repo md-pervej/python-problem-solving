@@ -1,10 +1,6 @@
 
+list1=[1,'a']
+list2=[2,4,5]
 
-string=input("Enter string")
-try:
-    num=int(input("Enter numb er"))
-    print(string + num)
-except(TypeError,ValueError) as e:
-    print(e)
-
-
+joined_list=list1+list2
+print(joined_list)

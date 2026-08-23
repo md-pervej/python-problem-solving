@@ -1,8 +1,13 @@
 
-string=input("Enter a string:")
+list1=[1,'a']
+list2=[1,2,3,4,5]
 
-try:
-    num=int(input("Enter a num:"))
-    print(string+num)
-except(TypeError,ValueError) as e:
-    print(e)
+# joined_list=list1 + list2
+
+# print(joined_list)
+
+# joined_list=[*list1,*list2]
+# print(joined_list)
+
+joined_list=list(set(list1+list12))
+print(joined_list)

@@ -1,8 +1,6 @@
 
-string=input("Enter a string:")
+list1=[1,'a']
+list2=range(2,6)
+joined_list=[*list1 , *list2]
+print(joined_list)
 
-try:
-    num=int(input("Enter a num:"))
-    print(string+num)
-except(TypeError,ValueError) as e:
-    print(e)
