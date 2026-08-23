@@ -1,6 +1,8 @@
 
-list1=[1,'a']
-list2=range(2,6)
-joined_list=[*list1 , *list2]
-print(joined_list)
+def split(list,size):
+    for i in range(0,len(list),size):
+        yield list[i:i+chunk_size]
 
+chunk_size=2
+my_list=[1,2,3,4,5,6,7,8,9]
+print(list(split(my_list,chunk_size)))

@@ -1,5 +1,11 @@
 
-my_dic={1:'a',2:'b',3:'c'}
 
-if 2 in my_dic:
-    print("presennt")
+def split(list,chunk_size):
+    for i in range(0, len(list),chunk_size):
+        yield list[i:i + chunk_size]
+
+
+
+chunk_size=2
+my_list=[1,2,3,4,5,6,7,8]
+print(list(split(my_list,chunk_size)))
