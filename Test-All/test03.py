@@ -1,6 +1,5 @@
 
-dic={5:4,2:8,3:4,1:2}
+my_list=[]
 
-sorted_dic={key:value for key,value in sorted(dic.items(),key=lambda item:item[1])}
-
-print(sorted_dic)
+if not len(my_list):
+    print("The list is empty")

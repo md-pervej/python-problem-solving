@@ -1,6 +1,4 @@
 
-
-dt={5:4,1:6,6:3}
-
-sorted_dic= {key:value for key,value in sorted(dt.items(),key=lambda item:item[1])}
-print(sorted_dic)
+my_list=[]
+if not my_list:
+    print("The list is empty")
