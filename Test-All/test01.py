@@ -1,4 +1,10 @@
 
-my_list=[]
-if not my_list:
-    print("The list is empty")
+
+string=input("Enter string")
+try:
+    num=int(input("Enter numb er"))
+    print(string + num)
+except(TypeError,ValueError) as e:
+    print(e)
+
+
