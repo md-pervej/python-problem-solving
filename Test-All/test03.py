@@ -1,6 +1,9 @@
 
-balance_string="105060"
-balance_int=int(float(balance_string))
+from datetime import datetime
 
-print(type(balance_int))
-print(balance_int)
+my_date_time="Mar 10 2026 12:30PM"
+
+date_time_object=datetime.strptime(my_date_time,'%b %d %Y %I:%M%p')
+result=date_time_object.strftime('%d-%b-%Y %I:%M%p')
+# print(type(date_time_object))
+print(result)

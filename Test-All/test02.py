@@ -1,6 +1,9 @@
 
-balance_string="1030"
-balance_float=float(balance_string)
+from dateutil import parser
 
-print(type(balance_float))
-print(balance_float)
+my_date="Mar 10 2026 10:35AM"
+
+date_time=parser.parse(my_date)
+result=date_time.strftime("%d %b %Y %I:%M:%p")
+print(result)
+print(my_date)

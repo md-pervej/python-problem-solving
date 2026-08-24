@@ -1,5 +1,10 @@
 
-my_dic={5:8,6:9,3:2,4:1,9:4}
+from datetime import datetime
 
-dic_list={key:value for key,value in sorted(my_dic.items(),key=lambda item:item[1])}
-print(dic_list)
+my_date="10 Mar 2026 11:20AM"
+
+my_date_time=datetime.strptime(my_date,'%d %b %Y %I:%M%p')
+print(type(my_date_time))
+result=my_date_time.strftime('%d %b %Y %I:%M%p')
+print(result)
+print(my_date_time)

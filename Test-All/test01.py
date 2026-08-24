@@ -1,7 +1,5 @@
 
+from dateutil import parser
 
-blance_string="1500"
-balance_int=int(blance_string)
-
-print(type(blance_string))
-print(blance_string)
+date_time=parser.parse("Mar 15 2026 10:15AM")
+print(date_time)
