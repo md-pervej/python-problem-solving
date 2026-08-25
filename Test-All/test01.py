@@ -1,6 +1,8 @@
 
-my_string="I love Python."
 
-print(my_string[2:6])
-print(my_string[2:])
-print(my_string[:-1])
+with open("../Ps-All/data.txt") as f:
+    file_content=f.readlines()
+print(file_content)
+
+file_content=[x.strip() for x in file_content]
+print(file_content)

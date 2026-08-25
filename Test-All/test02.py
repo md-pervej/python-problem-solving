@@ -1,9 +1,9 @@
 
-from dateutil import parser
+with open("../Ps-All/data.txt") as f:
+    file_content=[line for line in f]
 
-my_date="Mar 10 2026 10:35AM"
+print(file_content)
 
-date_time=parser.parse(my_date)
-result=date_time.strftime("%d %b %Y %I:%M:%p")
-print(result)
-print(my_date)
+with open("../Ps-All/data.txt") as f:
+    file_content=[line.strip() for line in f]
+print(file_content)

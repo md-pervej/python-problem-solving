@@ -1,9 +1,8 @@
 
-from datetime import datetime
+with open("../Ps-All/data.txt") as file:
+    file_content= file.readlines()
 
-my_date_time="Mar 10 2026 12:30PM"
+print(file_content)
 
-date_time_object=datetime.strptime(my_date_time,'%b %d %Y %I:%M%p')
-result=date_time_object.strftime('%d-%b-%Y %I:%M%p')
-# print(type(date_time_object))
-print(result)
+file_data=[data.strip() for data in file_content]
+print(file_data)
