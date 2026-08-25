@@ -1,2 +1,3 @@
-freq = ['a', 1, 'a', 4, 3, 2, 'a'].count('a')
-print(freq)
+
+with open('my_file.txt','a') as file:
+    file.write("I love python ")

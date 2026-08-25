@@ -1,3 +1,3 @@
 
-freq=my_list=[1,2,'a',2,3,'a',4,'a',5,'a'].count('a')
-print(freq)
+with open('file2.txt','a') as file:
+    file.write("This is 2nd file")
