@@ -1,3 +1,8 @@
 
-with open('file2.txt','a') as file:
-    file.write("This is 2nd file")
+
+my_dic={'a':'HTML','b':'CSS','c':'Python'}
+
+# del my_dic['b']
+# print(my_dic)
+print(my_dic.pop('b'))
+print(my_dic)
