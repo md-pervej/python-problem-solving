@@ -1,4 +1,6 @@
 
-my_list=['a','b','c','d','e']
+my_string="I love Python."
 
-print(my_list[-1])
+print(my_string[2:6])
+print(my_string[2:])
+print(my_string[:-1])
