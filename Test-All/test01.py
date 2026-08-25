@@ -1,5 +1,4 @@
 
-from dateutil import parser
+my_list=['a','b','c','d','e']
 
-date_time=parser.parse("Mar 15 2026 10:15AM")
-print(date_time)
+print(my_list[-1])
