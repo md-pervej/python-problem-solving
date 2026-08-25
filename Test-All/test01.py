@@ -1,19 +1,8 @@
 
-my_string='''
-I am learning Python
-        Python is very easy
-                Why learn Python
-'''
+import os
+import pathlib
+file_details=os.path.splitext("file2.txt")
+# print(file_details)
+# print(file_details[1])
 
-print(my_string)
-my_string2=(
-    "This is python-1 \n"
-    "This is python -2 \n"
-        "This is python-3"
-)
-print(my_string2)
-
-my_string3="I am learning Python \n"\
-        "I am learning Java \n" \
-        "I am learning React."
-print(my_string3)
+print(pathlib.Path('file2.txt').suffix)

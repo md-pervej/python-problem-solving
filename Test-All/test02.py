@@ -1,8 +1,9 @@
 
+import os
+import pathlib
+file_details=os.path.splitext('file2.txt')
+# print(file_details)
+# print(file_details[1])
 
-my_dic={'a':'HTML','b':'CSS','c':'Python'}
-
-# del my_dic['b']
-# print(my_dic)
-print(my_dic.pop('b'))
-print(my_dic)
+file_details=pathlib.Path('file2.txt').suffix
+print(file_details)
