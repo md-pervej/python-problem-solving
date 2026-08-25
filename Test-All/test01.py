@@ -1,8 +1,9 @@
 
-import os
-import pathlib
-file_details=os.path.splitext("file2.txt")
-# print(file_details)
-# print(file_details[1])
+import time
+start=time.time()
 
-print(pathlib.Path('file2.txt').suffix)
+print(23*3.5)
+time.sleep(1)
+
+end=time.time()
+print(end-start)

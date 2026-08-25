@@ -1,9 +1,8 @@
 
-import os
-import pathlib
-file_details=os.path.splitext('file2.txt')
-# print(file_details)
-# print(file_details[1])
 
-file_details=pathlib.Path('file2.txt').suffix
-print(file_details)
+from timeit import default_timer as timer
+start=timer()
+print(23*5)
+end=timer()
+
+print(end-start)
