@@ -1,8 +1,10 @@
 
+# import random
+#
+# my_list=[1,'a',32,'c','d',31]
+#
+# print(random.choice(my_list))
 
-with open("../Ps-All/data.txt") as f:
-    file_content=f.readlines()
-print(file_content)
-
-file_content=[x.strip() for x in file_content]
-print(file_content)
+import secrets
+my_list=[1,'a',32,'c','d',31]
+print(secrets.choice(my_list))
