@@ -1,10 +1,3 @@
 
-
-def isFloat(num):
-    try:
-        float(num)
-        return True
-    except ValueError:
-        return False
-print(isFloat('12.s'))
-print(isFloat('12.5'))
+freq=my_list=[1,2,'a',2,3,'a',4,'a',5,'a'].count('a')
+print(freq)
