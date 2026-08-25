@@ -1,6 +1,6 @@
 
 
-# -----:72 Python Program to Delete an Element From a Dictionary----
+-----:72 Python Program to Delete an Element From a Dictionary----
 my_dic={1:'HTML',2:'CSS',3:'Java'}
 
 # del my_dic[2]
