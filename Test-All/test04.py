@@ -1,10 +1,7 @@
 
 
-with open("../Ps-All/data.txt") as file:
-    file_content=[ data for data in file]
+index=[1,2,3,4,5]
+course=['HTML','CSS','Java','Python']
 
-print(file_content)
-
-with open("../Ps-All/data.txt") as file:
-    file_data=[data.rstrip() for data in file]
-print(file_data)
+my_dic={k:v for k,v in zip(index,course)}
+print(my_dic)

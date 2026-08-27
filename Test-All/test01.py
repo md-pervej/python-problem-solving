@@ -1,6 +1,7 @@
 
-class Vehicle:
-    def name(self,name):
-        return name
-v=Vehicle()
-print(v.__class__.__name__)
+
+index=[1,2,3]
+course=['HTML','CSS','JAVA']
+
+dict=dict(zip(index,course))
+print(dict)
