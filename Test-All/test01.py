@@ -1,9 +1,6 @@
 
-import time
-start=time.time()
-
-print(23*3.5)
-time.sleep(1)
-
-end=time.time()
-print(end-start)
+class Vehicle:
+    def name(self,name):
+        return name
+v=Vehicle()
+print(v.__class__.__name__)

@@ -1,8 +1,8 @@
 
+class Vehicle:
+    def name(self,name):
+        return name
 
-from timeit import default_timer as timer
-start=timer()
-print(23*5)
-end=timer()
+V=Vehicle()
 
-print(end-start)
+print(V.__class__.__name__)
