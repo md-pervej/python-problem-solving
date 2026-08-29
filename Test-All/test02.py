@@ -1,7 +1,11 @@
 
-import re
-string="  I am learning Python "
+import os
+from pathlib import Path
+file_name=os.path.basename('../Ps-All/data.txt')
+print(os.path.splitext(file_name)[0])
 
-print(string)
-print(string.strip())
-print(re.sub(r'^\s+|\s$','',string))
+print(Path('./file2.txt').stem)
+
+
+
+

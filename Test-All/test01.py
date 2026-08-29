@@ -1,8 +1,8 @@
-import re
-string="  I love Python"
 
-print(string)
-# print(string)
-# print(string.strip())
+import os
+from pathlib import  Path
+file_name=os.path.basename('./myfile.txt')
 
-print(re.sub(r'^\s+|\s+$','',string))
+print(os.path.splitext(file_name)[0])
+
+print(Path('./myfile.txt').stem)
