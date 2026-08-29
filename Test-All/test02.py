@@ -1,5 +1,18 @@
 
-index=[1,2,3,4]
-course=['HTML','CSS','React','MySQL']
-my_dic=dict(zip(index,course))
-print(my_dic)
+
+class Polygon:
+    def sides_no(self):
+        pass
+
+class Triangle(Polygon):
+    def sides_no(self):
+        pass
+
+polygon=Polygon()
+triangle=Triangle()
+
+print(type(polygon)==Polygon)
+print(type(triangle)==Polygon)
+
+print(isinstance(polygon,Polygon))
+print(isinstance(triangle,Polygon))

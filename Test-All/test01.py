@@ -1,7 +1,21 @@
 
 
-index=[1,2,3]
-course=['HTML','CSS','JAVA']
+class Polygon:
+    def sides_no(self):
+        pass
 
-dict=dict(zip(index,course))
-print(dict)
+
+class Triangle(Polygon):
+    def area(self):
+        pass
+
+
+obj_polygon=Polygon()
+obj_triangle=Triangle()
+
+print(type(obj_triangle)==Triangle)
+print(type(obj_triangle)==Polygon)
+
+print(isinstance(obj_polygon,Polygon))
+print(isinstance(obj_triangle,Polygon))
+
