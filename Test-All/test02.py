@@ -1,11 +1,11 @@
 
-import os
-from pathlib import Path
-file_name=os.path.basename('../Ps-All/data.txt')
-print(os.path.splitext(file_name)[0])
 
-print(Path('./file2.txt').stem)
+from enum import Enum
+class Day(Enum):
+    MONDAY=1
+    TUESDAY=2
+    WEDNESDAY=3
 
-
-
-
+print(Day.MONDAY)
+print(Day.MONDAY.name)
+print(Day.WEDNESDAY.value)

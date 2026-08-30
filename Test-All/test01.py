@@ -1,8 +1,14 @@
 
-import os
-from pathlib import  Path
-file_name=os.path.basename('./myfile.txt')
+from enum import Enum
 
-print(os.path.splitext(file_name)[0])
 
-print(Path('./myfile.txt').stem)
+class Day(Enum):
+    Monday=1
+    Tuesday=2
+    Wednesday=3
+
+print(Day.Monday)
+print(Day.Tuesday.name)
+print(Day.Monday.value)
+
+
