@@ -1,2 +1,6 @@
 I love python
-python is easy for beginnerI love pythonI love python 
+python is easy for beginnerI love pythonI love python
+I am learning Python
+I am learning Java
+I am learning MySQL
+I am learning React

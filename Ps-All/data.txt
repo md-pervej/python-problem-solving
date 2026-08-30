@@ -1,2 +1,5 @@
 I love python.
 python is very easy to learn for beginner
+I love python
+I love React
+I love Java
