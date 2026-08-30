@@ -1,3 +1,16 @@
 
-line_count=sum(1 for l in open('my_file.txt'))
-print(line_count)
+
+import os
+import glob
+
+# os.chdir()
+# for file in glob.glob("*.txt"):
+#     print(file)
+
+# for file in os.listdir():
+#     if file.endswith('.txt'):
+#         print(file)
+for root,dirs,files in os.walk("."):
+    for file in files:
+        if file.endswith(".txt"):
+            print(file)
