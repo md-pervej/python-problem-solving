@@ -1,14 +1,15 @@
 
-from enum import Enum
+def name():
+    return "Ashraful","Alam"
 
+print(name())
+name_1,name_2=name()
+print(name_1,name_2)
 
-class Day(Enum):
-    Monday=1
-    Tuesday=2
-    Wednesday=3
+def course():
+    course1="HTML"
+    course2="Java"
+    return {1:course1,2:course2}
 
-print(Day.Monday)
-print(Day.Tuesday.name)
-print(Day.Monday.value)
-
-
+courses=course()
+print(courses)

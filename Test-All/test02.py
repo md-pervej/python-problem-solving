@@ -1,11 +1,13 @@
 
+def name():
+    return "Farhana","Tanjum"
 
-from enum import Enum
-class Day(Enum):
-    MONDAY=1
-    TUESDAY=2
-    WEDNESDAY=3
+print(name())
+name1,name2=name()
+print(name1,name2)
 
-print(Day.MONDAY)
-print(Day.MONDAY.name)
-print(Day.WEDNESDAY.value)
+def country():
+    country1="China"
+    country2="USA"
+    return {1:country1,2:country2}
+print(country())
