@@ -1,11 +1,11 @@
 
-import itertools
-list_1=[1,2,3,4,5,6]
-list_2=['a','b','c','d','e']
 
-for i,j in zip(list_1,list_2):
-    pass
-    # print(i,j)
+import os
+from pathlib import Path
+file_size=os.stat('my_file.txt')
+print(file_size.st_size)
 
-for i,j in itertools.zip_longest(list_1,list_2):
-    print(i,j)
+file=Path('my_file.txt')
+print(file.stat().st_size)
+
+
