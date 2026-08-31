@@ -1,6 +1,7 @@
 
-
+# -----89:Python Program to Reverse a Number-----
 num=int(input("Enter a number to reversed:"))
+
 reversed_num=0
 
 while num !=0:
