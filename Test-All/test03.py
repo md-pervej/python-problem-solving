@@ -1,16 +1,6 @@
 
-import os
-import glob
-# os.chdir("dirA/dirB/dirC/")
-# for file in glob.glob("*.txt"):
-#     print(file)
+import os,pathlib,time
 
-# for file in os.listdir("./dirA/dirB/dirC/"):
-#     if file.endswith(".txt"):
-#         print(file)
-
-for root,dir,files in os.walk("./dirA/dirB/dirC"):
-    for file in files:
-        if file.endswith(".txt"):
-            print(file)
-
+file=pathlib.Path('my_file.txt')
+print("Last MOdifcation time is: %s" % time.ctime(os.path.getmtime(file)))
+print("Metadata change time or path creation tiem: %s" % time.ctime(os.path.getctime(file)))

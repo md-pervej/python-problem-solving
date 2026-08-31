@@ -1,16 +1,7 @@
 
+import os,pathlib
+import time
 
-import os
-import glob
-
-# os.chdir()
-# for file in glob.glob("*.txt"):
-#     print(file)
-
-# for file in os.listdir():
-#     if file.endswith('.txt'):
-#         print(file)
-for root,dirs,files in os.walk("."):
-    for file in files:
-        if file.endswith(".txt"):
-            print(file)
+file=pathlib.Path('my_file.txt')
+print("Last Modification date is: %s" % time.ctime(os.path.getmtime(file)))
+print("Last medata change time or path creation time: %s" % time.ctime(os.path.getctime(file)))

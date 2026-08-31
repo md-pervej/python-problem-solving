@@ -1,8 +1,5 @@
 
-
-import glob,os
-# os.chdir('Test-All')
-
-for file in glob.glob("*.txt"):
-    print(file)
-print(os.getcwd())
+import os.path, time
+import pathlib
+file=pathlib.Path('my_file.txt')
+print("Last Modification time is : %s"% time.ctime(os.path.getmtime(file)))
