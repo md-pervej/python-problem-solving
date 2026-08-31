@@ -1,7 +1,4 @@
+import os
+print(os.path.dirname(os.path.abspath('my_file.txt')))
 
-import os,pathlib
-import time
-
-file=pathlib.Path('my_file.txt')
-print("Last Modification date is: %s" % time.ctime(os.path.getmtime(file)))
-print("Last medata change time or path creation time: %s" % time.ctime(os.path.getctime(file)))
+print(os.path.abspath(os.getcwd()))

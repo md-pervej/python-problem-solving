@@ -1,5 +1,5 @@
 
-import os.path, time
 import pathlib
-file=pathlib.Path('my_file.txt')
-print("Last Modification time is : %s"% time.ctime(os.path.getmtime(file)))
+
+print(pathlib.Path('my_file.txt').parent.absolute())
+print(pathlib.Path().absolute())
