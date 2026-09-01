@@ -1,12 +1,9 @@
 
-base=int(input("Enter base: "))
-exponent=int(input("Enter exponent: "))
+num=int(input("Enter a number to count digit:"))
 
-result=1
+count=0
 
-while exponent !=0:
-    result *=base
-    exponent -=1
-
-print("Answer=: "+ str(result))
-
+while num !=0:
+    num //=10
+    count +=1
+print("Numbers of digit is:",count)

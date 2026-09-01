@@ -1,11 +1,11 @@
 
+num=int(input("Enter a number:"))
 
-base=int(input("Enter a Base:"))
-exponent=int(input("Enter a exponent:"))
+# count=0
+#
+# while num !=0:
+#     num //=10
+#     count +=1
+# print("Number of digit is :",count)
 
-result=1
-
-while exponent !=0:
-    result *=base
-    exponent -=1
-print("Answer is: "+ str(result))
+print(len(str(num)))
