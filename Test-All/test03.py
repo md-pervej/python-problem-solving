@@ -1,6 +1,11 @@
 
-import os,pathlib,time
+base=int(input("Enter base:"))
+# 2
+exponent=int(input("Enter exponent:"))
+# 3
+result=1
+# 4
+for exponent in range(exponent,0,-1):
+     result *=base
 
-file=pathlib.Path('my_file.txt')
-print("Last MOdifcation time is: %s" % time.ctime(os.path.getmtime(file)))
-print("Metadata change time or path creation tiem: %s" % time.ctime(os.path.getctime(file)))
+print("Answer is: "+ str(result))
